@@ -1,17 +1,17 @@
 body {
   font-family: 'Outfit', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #fdfdfd;
+  background: #fdfdfd;
+  color: #333;
 }
 header {
-  background-color: #fff;
-  padding: 1em;
+  background: white;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
   color: #444;
   font-weight: 600;
@@ -23,15 +23,18 @@ nav a {
   padding: 100px 20px;
 }
 .banner-content {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.4);
   display: inline-block;
   padding: 2em;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 section {
-  padding: 40px 20px;
-  max-width: 900px;
+  padding: 60px 20px;
+  max-width: 960px;
   margin: auto;
+}
+h2 {
+  margin-bottom: 0.8em;
 }
 .grid {
   display: flex;
@@ -40,20 +43,33 @@ section {
 }
 .product-card {
   background: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
+  border: 1px solid #eee;
   border-radius: 6px;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+  padding: 15px;
+  flex: 1 1 250px;
 }
 .product-card img {
   width: 100%;
   border-radius: 4px;
 }
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background: #222;
+  color: white;
+  padding: 0.8em 1.2em;
+  border: none;
+  border-radius: 4px;
+}
 footer {
   text-align: center;
-  padding: 20px;
   font-size: 0.9em;
   color: #777;
+  padding: 20px;
 }
