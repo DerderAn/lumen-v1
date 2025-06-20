@@ -1,151 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumen | Crystal Rituals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Outfit', sans-serif;
-      margin: 0;
-      background-color: #f8f6f3;
-      color: #333;
-    }
-    header, footer {
-      background-color: #fff;
-      padding: 1em 2em;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 1em;
-      text-decoration: none;
-      color: #555;
-    }
-    .banner {
-      background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b7b8a879?auto=format&fit=crop&w=1920&q=80');
-      background-size: cover;
-      background-position: center;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
-    }
-    .banner h2 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
-    }
-    .section {
-      padding: 3em 2em;
-      text-align: center;
-    }
-    .grid {
-      display: flex;
-      justify-content: center;
-      gap: 2em;
-      flex-wrap: wrap;
-    }
-    .product-card {
-      max-width: 280px;
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: auto;
-      gap: 1em;
-    }
-    input, textarea, button {
-      padding: 0.8em;
-      font-family: 'Outfit', sans-serif;
-      font-size: 1em;
-    }
-    button {
-      background-color: black;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumen | Elemental Healing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Lumen</h1>
     <nav>
-      <a href="#story">About</a>
-      <a href="#products">Products</a>
+      <a href="#story">Brand Story</a>
+      <a href="#new">New</a>
+      <a href="#best">Best Sellers</a>
+      <a href="#shop">Shop All</a>
       <a href="#learn">Learn</a>
-      <a href="#booking">Book</a>
+      <a href="book.html">Book</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <div class="banner">
-    <h2>Awaken Your Energy</h2>
-    <p>Crystal tools rooted in Taoist Five Elements — align, restore, empower.</p>
+    <div class="banner-content">
+      <h2>Awaken Your Energy</h2>
+      <p>Crystals, rituals, and tools inspired by Taoist Five Elements — reimagined for the modern soul.</p>
+    </div>
   </div>
 
-  <section id="story" class="section">
-    <h2>Our Mission</h2>
-    <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature's five elemental forces. Our crystals are curated to awaken inner flow and harmony — for those who believe in beauty that resonates deeper.</p>
-    <h3>Founders</h3>
-    <p><strong>Evian</strong> – Crystal therapist, metaphysical healer, and intuitive coach. With years of study across East-West healing traditions, she leads the crystal curation and wellness rituals.</p>
-    <p><strong>Dean</strong> – Taoist geomancer and Five Elements master. Founder of an AI-powered fortune reading system, he blends classical Chinese metaphysics with contemporary technology for deep insight and clarity.</p>
+  <section id="story">
+    <h2>Our Story</h2>
+    <p>Inspired by Taoist elemental wisdom and refined through a Western lens of minimalism, Lumen offers a path to inner harmony.</p>
   </section>
 
-  <section id="products" class="section">
-    <h2>Crystal Bracelets</h2>
+  <section>
+    <h2>Meet the Founders</h2>
     <div class="grid">
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1614098923835-62b26139b2a2?auto=format&fit=crop&w=800&q=80" alt="Tiger Eye Bracelet">
-        <h3>Tiger Eye Energy Bracelet</h3>
-        <p>Grounding and empowering. A go-to for daily strength and focus.</p>
+        <h3>Evian — Crystal Expert</h3>
+        <p>Evian has spent over a decade studying mineral vibrations and their connection to energy healing. Certified in vibrational therapy and crystal healing rituals.</p>
       </div>
       <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1605702012163-f66d06de4982?auto=format&fit=crop&w=800&q=80" alt="Amethyst Bracelet">
-        <h3>Amethyst Harmony Bracelet</h3>
-        <p>Soothing and intuitive — perfect for meditation and inner calm.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1609710228159-2bb6cd3028fc?auto=format&fit=crop&w=800&q=80" alt="Citrine Bracelet">
-        <h3>Citrine Joy Bracelet</h3>
-        <p>Radiates warmth and abundance, linked to the Fire element.</p>
+        <h3>Dean — Taoist Metaphysics Specialist</h3>
+        <p>Dean is a Feng Shui master and AI metaphysics innovator. Creator of a powerful Five Element horoscope system. Skilled in traditional Eastern astrology and divination.</p>
       </div>
     </div>
   </section>
 
-  <section id="booking" class="section">
-    <h2>Book Element Readings</h2>
-    <p><strong>Crystal Reading</strong> — Guided by Evian, this session matches your energy field to crystals that support clarity, healing, and intention.</p>
-    <p><strong>Five Elements Reading</strong> — Led by Dean, this classical Taoist analysis evaluates your birth chart to identify imbalances in Wood, Fire, Earth, Metal, and Water.</p>
-    <p><strong>Sound Healing</strong> — A co-led experience combining crystal tuning and element-based vibrations to reset your internal flow.</p>
-    <p><strong>Private Healing (local only)</strong> — In-person ritual tailored to your spiritual and energetic needs.</p>
-    <p><strong>Home Feng Shui (local only)</strong> — Eastern geomancy consultation to harmonize your living space, conducted by Dean & Evian.</p>
+  <section id="new">
+    <h2>New Arrivals</h2>
+    <div class="grid">
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Elemental Pendant – Fire</h3><p>Ignite passion and energy.</p></div>
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Yin-Yang Tray</h3><p>Daily ritual companion.</p></div>
+    </div>
   </section>
 
-  <section id="contact" class="section">
+  <section id="best">
+    <h2>Best Sellers</h2>
+    <div class="grid">
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Wood Element Bracelet</h3><p>For growth and purpose.</p></div>
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Metal Element Mist</h3><p>Infused with clarity.</p></div>
+    </div>
+  </section>
+
+  <section id="shop">
+    <h2>Shop All</h2>
+    <div class="grid">
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Water Element Candle</h3><p>Intuition & softness.</p></div>
+      <div class="product-card"><img src="https://via.placeholder.com/300x300"><h3>Earth Crystal Kit</h3><p>Grounding set.</p></div>
+    </div>
+  </section>
+
+  <section id="learn">
+    <h2>Learn</h2>
+    <ul>
+      <li><strong>Wood</strong>: Vision, growth, flexibility</li>
+      <li><strong>Fire</strong>: Passion, expression</li>
+      <li><strong>Earth</strong>: Stability, care</li>
+      <li><strong>Metal</strong>: Structure, reflection</li>
+      <li><strong>Water</strong>: Flow, wisdom</li>
+    </ul>
+    <p><a href="crystal-meanings.html">Explore Crystal Meanings</a> | <a href="horoscope.html">Try Horoscope Test</a></p>
+  </section>
+
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Leave us a message — we’ll reply as soon as energy allows ✧</p>
-    <form action="https://formsubmit.co/69f881d2-6e0d-47e5-9062-3aebda0e3151" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://lumenelement.netlify.app/thank-you.html">
-      <button type="submit">Send Message</button>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="69f881d2-6e0d-47e5-9062-3aebda0e3151">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Lumen. Powered by Taoist energy & intention.
+    &copy; 2025 Lumen by Evian & Dean.
   </footer>
 </body>
 </html>
