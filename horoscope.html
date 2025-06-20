@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8" /><title>Horoscope</title><link rel="stylesheet" href="style.css" /></head>
+<head>
+  <meta charset="UTF-8">
+  <title>Horoscope Test - Lumen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<h1>Horoscope Test</h1>
-<p>Enter your details to reveal your Five Element profile. (DeepSeek integration coming soon)</p>
-<form>
-  <input type="text" placeholder="Full Name" required />
-  <input type="date" required />
-  <input type="time" required />
-  <input type="text" placeholder="Birth Place" required />
-  <button type="submit">Submit</button>
-</form>
-</body></html>
+  <header><h1>Horoscope Test</h1></header>
+  <section>
+    <p>Enter your birth details below for elemental fortune reading.</p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="69f881d2-6e0d-47e5-9062-3aebda0e3151">
+      <input name="birthdate" placeholder="Date of Birth (YYYY-MM-DD)" required />
+      <input name="birthtime" placeholder="Time of Birth (HH:MM)" />
+      <input name="location" placeholder="Place of Birth" />
+      <button type="submit">Get Analysis</button>
+    </form>
+  </section>
+</body>
+</html>

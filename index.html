@@ -1,42 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lumen | Elemental Healing</title>
+  <title>Lumen | Awaken Your Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Lumen</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#new">New Arrivals</a>
+      <a href="#bestsellers">Best Sellers</a>
       <a href="learn.html">Learn</a>
-      <a href="book.html">Book Element Reading</a>
-      <a href="contact.html">Contact</a>
+      <a href="horoscope.html">Horoscope</a>
+      <a href="book.html">Book</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="banner">
+  <div class="hero">
     <h2>Awaken Your Energy</h2>
-    <p>Crystal tools inspired by the Five Elements — where earth meets soul.</p>
+    <p>Begin your ritual with crystals inspired by Taoist five elements</p>
+  </div>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <p>Inspired by Taoist philosophy and nature’s five elemental forces, Lumen blends ancient ritual with modern aesthetics.</p>
   </section>
 
-  <section class="story">
-    <h2>Our Mission</h2>
-    <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature's five elemental forces...</p>
-  </section>
-
-  <section class="products">
+  <section id="new">
     <h2>New Arrivals</h2>
-    <div class="product">Tiger Eye Bracelet</div>
-    <div class="product">Amethyst Bracelet</div>
-    <div class="product">Citrine Bracelet</div>
+    <div class="grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1614098923835-62b26139b2a2?auto=format&fit=crop&w=800&q=80" alt="Tiger Eye Bracelet" />
+        <h3>Tiger Eye Energy</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="bestsellers">
+    <h2>Best Sellers</h2>
+    <div class="grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1609710228159-2bb6cd3028fc?auto=format&fit=crop&w=800&q=80" alt="Citrine Bracelet" />
+        <h3>Citrine Joy</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="69f881d2-6e0d-47e5-9062-3aebda0e3151">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    &copy; 2025 Lumen. Powered by Taoist energy & intention.
+    <p>&copy; 2025 Lumen. All rights reserved.</p>
   </footer>
 </body>
 </html>
