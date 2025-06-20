@@ -1,10 +1,69 @@
 
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8" /><title>Contact</title><link rel="stylesheet" href="style.css" /></head><body>
-<header><h1>Contact Us</h1><nav><a href="index.html">Home</a></nav></header>
-<section class="story"><form action="https://formsubmit.co/69f881d2-6e0d-47e5-9062-3aebda0e3151" method="POST">
-<input type="text" name="name" placeholder="Your Name" required><br>
-<input type="email" name="email" placeholder="Your Email" required><br>
-<textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
-<button type="submit">Send Message</button></form></section>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen | Crystal Rituals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Outfit', sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+    header, footer { background: #f5f5f5; padding: 20px; text-align: center; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    .banner { background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat; padding: 100px 20px; text-align: center; color: white; }
+    .banner h2 { font-size: 48px; margin-bottom: 10px; }
+    .banner p { font-size: 20px; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 20px; }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 500px; margin: auto; }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    button {
+      background: #000;
+      color: white;
+      cursor: pointer;
+    }
+    .footer-note { font-size: 14px; color: #999; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lumen</h1>
+    <nav>
+      <a href="#story">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>Awaken Your Energy</h2>
+    <p>Crystal rituals rooted in the Five Elements</p>
+  </div>
+
+  <section id="story">
+    <h2>Our Story</h2>
+    <p style="text-align: center;">Inspired by Taoist elemental wisdom and refined through a Western lens of minimalism, Lumen offers a path to inner harmony. Our mission is to help you restore balance using nature’s own rhythm — through crystals, rituals, and meaningful objects designed around the Five Elements: Wood, Fire, Earth, Metal, and Water.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">Have a question or want to book a session? Send us a message below ✧</p>
+    <form action="https://formsubmit.co/xiruhuang@foxmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="hidden" name="_next" value="https://lumenelement.netlify.app/thank-you.html">
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Lumen. All rights reserved.</p>
+    <p class="footer-note">Crafted with energy & intention.</p>
+  </footer>
+</body>
+</html>
