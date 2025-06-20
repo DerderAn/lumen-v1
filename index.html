@@ -3,25 +3,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lumen | Crystal Rituals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Outfit', sans-serif; margin: 0; background-color: #f8f5f2; color: #333; }
-    header, footer { background: #fff; text-align: center; padding: 1.5em 1em; }
-    nav a { margin: 0 1em; text-decoration: none; color: #444; font-weight: 600; }
-    .banner { background: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97') no-repeat center/cover; color: white; text-align: center; padding: 10em 1em; }
-    .banner h2 { font-size: 3em; margin-bottom: 0.2em; }
-    .banner p { font-size: 1.2em; max-width: 600px; margin: 0 auto; }
-    section { padding: 4em 1em; max-width: 900px; margin: auto; text-align: center; }
-    h2 { margin-bottom: 1em; }
-    .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2em; }
-    .product-card { background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 1em; width: 250px; }
-    .product-card img { max-width: 100%; border-radius: 8px; }
-    form { display: flex; flex-direction: column; gap: 1em; max-width: 500px; margin: auto; }
-    input, textarea, button { padding: 0.8em; font-size: 1em; }
-    button { background-color: #444; color: white; border: none; cursor: pointer; }
-    .subsection { text-align: left; margin-top: 2em; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      background-color: #f8f6f3;
+      color: #333;
+    }
+    header, footer {
+      background-color: #fff;
+      padding: 1em 2em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1em;
+      text-decoration: none;
+      color: #555;
+    }
+    .banner {
+      background-image: url('https://images.unsplash.com/photo-1618005198919-d3d4b7b8a879?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    }
+    .banner h2 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+    .section {
+      padding: 3em 2em;
+      text-align: center;
+    }
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      max-width: 280px;
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+      gap: 1em;
+    }
+    input, textarea, button {
+      padding: 0.8em;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1em;
+    }
+    button {
+      background-color: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -31,28 +83,25 @@
       <a href="#story">About</a>
       <a href="#products">Products</a>
       <a href="#learn">Learn</a>
-      <a href="#book">Book</a>
+      <a href="#booking">Book</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <div class="banner">
     <h2>Awaken Your Energy</h2>
-    <p>Crystal tools rooted in Taoist metaphysics, aligned with the Five Elements to restore inner harmony.</p>
+    <p>Crystal tools rooted in Taoist Five Elements — align, restore, empower.</p>
   </div>
 
-  <section id="story">
-    <h2>Our Story</h2>
-    <p>Lumen was founded on the belief that ancient wisdom and modern design can coexist to create truly meaningful rituals. Inspired by Taoist teachings and the five elemental energies — wood, fire, earth, metal, and water — our tools are crafted to activate alignment and self-discovery.</p>
-
-    <div class="subsection">
-      <h3>Founders</h3>
-      <p><strong>Evian</strong> — Certified crystal healing expert with years of experience in vibrational therapy. She curates and blesses each piece personally with intention and clarity.</p>
-      <p><strong>Dean</strong> — Taoist metaphysics and Feng Shui master. Developer of our AI-powered astrology engine, skilled in Eight Characters (Ba Zi), I Ching divination, and energy mapping.</p>
-    </div>
+  <section id="story" class="section">
+    <h2>Our Mission</h2>
+    <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature's five elemental forces. Our crystals are curated to awaken inner flow and harmony — for those who believe in beauty that resonates deeper.</p>
+    <h3>Founders</h3>
+    <p><strong>Evian</strong> – Crystal therapist, metaphysical healer, and intuitive coach. With years of study across East-West healing traditions, she leads the crystal curation and wellness rituals.</p>
+    <p><strong>Dean</strong> – Taoist geomancer and Five Elements master. Founder of an AI-powered fortune reading system, he blends classical Chinese metaphysics with contemporary technology for deep insight and clarity.</p>
   </section>
 
-  <section id="products">
+  <section id="products" class="section">
     <h2>Crystal Bracelets</h2>
     <div class="grid">
       <div class="product-card">
@@ -73,55 +122,30 @@
     </div>
   </section>
 
-  <section id="learn">
-    <h2>Learn</h2>
-    <p>Explore the energy blueprint of the Five Elements and their corresponding crystals.</p>
-    <div class="subsection">
-      <h3>Wood</h3>
-      <p>Associated with growth and vitality. Use green aventurine or peridot.</p>
-      <h3>Fire</h3>
-      <p>Represents passion and expression. Use carnelian or citrine.</p>
-      <h3>Earth</h3>
-      <p>Stability and grounding. Try tiger eye or smoky quartz.</p>
-      <h3>Metal</h3>
-      <p>Clarity and precision. Use hematite or pyrite.</p>
-      <h3>Water</h3>
-      <p>Flow and intuition. Use amethyst or aquamarine.</p>
-    </div>
+  <section id="booking" class="section">
+    <h2>Book Element Readings</h2>
+    <p><strong>Crystal Reading</strong> — Guided by Evian, this session matches your energy field to crystals that support clarity, healing, and intention.</p>
+    <p><strong>Five Elements Reading</strong> — Led by Dean, this classical Taoist analysis evaluates your birth chart to identify imbalances in Wood, Fire, Earth, Metal, and Water.</p>
+    <p><strong>Sound Healing</strong> — A co-led experience combining crystal tuning and element-based vibrations to reset your internal flow.</p>
+    <p><strong>Private Healing (local only)</strong> — In-person ritual tailored to your spiritual and energetic needs.</p>
+    <p><strong>Home Feng Shui (local only)</strong> — Eastern geomancy consultation to harmonize your living space, conducted by Dean & Evian.</p>
   </section>
 
-  <section id="book">
-    <h2>Book Element Reading</h2>
-    <p>Select a healing experience tailored to your elemental profile:</p>
-    <ul>
-      <li><strong>Crystal Reading</strong> – led by Evian</li>
-      <li><strong>Five Elements Reading</strong> – led by Dean</li>
-      <li><strong>Sound Healing</strong> – by Dean & Evian</li>
-      <li><strong>Private Healing (Local Only)</strong> – by Dean & Evian</li>
-      <li><strong>Healing the Home (Feng Shui, Local Only)</strong> – by Dean & Evian</li>
-    </ul>
-    <form action="https://formsubmit.co/xiruhuang@foxmail.com" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="preferred_date" placeholder="Preferred Date" required />
-      <textarea name="message" placeholder="What would you like to book?" rows="4" required></textarea>
-      <button type="submit">Submit Booking</button>
-    </form>
-  </section>
-
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact Us</h2>
     <p>Leave us a message — we’ll reply as soon as energy allows ✧</p>
-    <form action="https://formsubmit.co/xiruhuang@foxmail.com" method="POST">
+    <form action="https://formsubmit.co/69f881d2-6e0d-47e5-9062-3aebda0e3151" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://lumenelement.netlify.app/thank-you.html">
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    &copy; 2025 Lumen. Guided by light and the Five Elements. All rights reserved.
+    &copy; 2025 Lumen. Powered by Taoist energy & intention.
   </footer>
 </body>
 </html>
