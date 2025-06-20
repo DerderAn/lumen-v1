@@ -1,37 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Horoscope Test</title>
-  <script>
-    async function submitForm(e) {
-      e.preventDefault();
-      const form = e.target;
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-
-      const response = await fetch('https://api.deepseek.com/astro', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
-      });
-
-      const result = await response.json();
-      document.getElementById('result').innerText = JSON.stringify(result, null, 2);
-    }
-  </script>
-</head>
+<head><meta charset="UTF-8" /><title>Horoscope</title><link rel="stylesheet" href="style.css" /></head>
 <body>
-  <h1>Horoscope Test</h1>
-  <form onsubmit="submitForm(event)">
-    <input type="text" name="name" placeholder="Name" required /><br>
-    <input type="datetime-local" name="birth_datetime" required /><br>
-    <input type="text" name="birth_place" placeholder="Birth Place" required /><br>
-    <input type="text" name="gender" placeholder="Gender" required /><br>
-    <input type="text" name="residence" placeholder="Current Residence" required /><br>
-    <button type="submit">Analyze</button>
-  </form>
-  <pre id="result"></pre>
-</body>
-</html>
+<h1>Horoscope Test</h1>
+<p>Enter your details to reveal your Five Element profile. (DeepSeek integration coming soon)</p>
+<form>
+  <input type="text" placeholder="Full Name" required />
+  <input type="date" required />
+  <input type="time" required />
+  <input type="text" placeholder="Birth Place" required />
+  <button type="submit">Submit</button>
+</form>
+</body></html>
