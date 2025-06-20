@@ -1,3 +1,133 @@
 
-<!-- 将用户上传的 index.html 内容粘贴到这里（为了简洁略写） -->
-<!-- 我们将在此基础上追加 Learn、Horoscope Test 和 Book Reading 模块 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen | Awaken Your Energy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #f8f8f8;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    .banner {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1535905557558-afc4877a26fc?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .banner h2 {
+      font-size: 48px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .product-card {
+      width: 300px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .product-card img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #f8f8f8;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lumen</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="banner">
+    <h2>Awaken Your Energy</h2>
+  </div>
+
+  <section id="about">
+    <h2>Inspired by Taoist Wisdom</h2>
+    <p>We craft rituals rooted in the five elements — Wood, Fire, Earth, Metal, and Water — to help you restore balance and connect with your inner energy flow.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Favorites</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1614098923835-62b26139b2a2?auto=format&fit=crop&w=800&q=80" alt="Tiger Eye Bracelet">
+        <h3>Tiger Eye Energy Bracelet</h3>
+        <p>Grounding and empowering. A go-to for daily strength and focus.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1605702012163-f66d06de4982?auto=format&fit=crop&w=800&q=80" alt="Amethyst Bracelet">
+        <h3>Amethyst Harmony Bracelet</h3>
+        <p>Soothing and intuitive — perfect for meditation and inner calm.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1609710228159-2bb6cd3028fc?auto=format&fit=crop&w=800&q=80" alt="Citrine Bracelet">
+        <h3>Citrine Joy Bracelet</h3>
+        <p>Radiates warmth and abundance, linked to the Fire element.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://formsubmit.co/xiruhuang@foxmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br><br>
+      <input type="email" name="email" placeholder="Your Email" required><br><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Lumen. All rights reserved.
+  </footer>
+</body>
+</html>
