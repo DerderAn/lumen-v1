@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Element Reading</title>
+</head>
+<body>
+  <h1>Book a Healing Session</h1>
+  <p><strong>Crystal Reading</strong> - led by Evian. Intuitive insights using crystal energy.</p>
+  <p><strong>Five Elements Reading</strong> - led by Dean. Rooted in Taoist elemental philosophy.</p>
+  <p><strong>Sound Healing / Private Healing / Home Feng Shui</strong> - hosted by both Evian & Dean.</p>
+  <form action="https://formsubmit.io/send/69f881d2-6e0d-47e5-9062-3aebda0e3151" method="POST">
+    <label>Name: <input type="text" name="name" required></label><br>
+    <label>Email: <input type="email" name="email" required></label><br>
+    <label>Choose Service:
+      <select name="service">
+        <option>Crystal Reading</option>
+        <option>Five Elements Reading</option>
+        <option>Sound Healing</option>
+        <option>Private Healing (local only)</option>
+        <option>Healing the Home (local only)</option>
+      </select>
+    </label><br>
+    <label>Date: <input type="date" name="appointment_date" required></label><br>
+    <button type="submit">Book Now</button>
+  </form>
+</body>
+</html>

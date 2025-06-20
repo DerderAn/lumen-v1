@@ -12,10 +12,11 @@
   <header>
     <h1>Lumen</h1>
     <nav>
-      <a href="#story">About</a>
-      <a href="#products">Products</a>
+      <a href="index.html">Home</a>
+      <a href="crystal-meanings.html">Crystal Meanings</a>
+      <a href="horoscope.html">Horoscope Test</a>
+      <a href="book.html">Book Element Reading</a>
       <a href="#contact">Contact</a>
-      <a href="#learn">Learn</a>
     </nav>
   </header>
 
@@ -29,93 +30,20 @@
   <section id="story">
     <h2>Our Mission</h2>
     <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature's five elemental forces. Our crystals are curated to awaken inner flow and harmony — for those who believe in beauty that resonates deeper.</p>
-
-    <h3>Founders</h3>
-    <div class="grid">
-      <div class="product-card">
-        <h4>Evian</h4>
-        <p>A certified crystal therapist and intuitive healer, Evian has studied the energetic structures of over 80 mineral types. Known for her ability to match crystals with individual elemental imbalances, she brings years of field practice and rare sourcing knowledge to Lumen.</p>
-      </div>
-      <div class="product-card">
-        <h4>Dean</h4>
-        <p>A Taoist metaphysics expert with over 15 years of experience, Dean has mastered Bazi, Qi Men Dun Jia, and Feng Shui. He independently developed an AI-based fortune analysis engine, merging traditional wisdom with modern intelligence to offer readings with precision and soul.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="products">
-    <h2>Crystal Bracelets</h2>
-    <div class="grid">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1614098923835-62b26139b2a2?auto=format&fit=crop&w=800&q=80" alt="Tiger Eye Bracelet">
-        <h3>Tiger Eye Energy Bracelet</h3>
-        <p>Grounding and empowering. A go-to for daily strength and focus.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1605702012163-f66d06de4982?auto=format&fit=crop&w=800&q=80" alt="Amethyst Bracelet">
-        <h3>Amethyst Harmony Bracelet</h3>
-        <p>Soothing and intuitive — perfect for meditation and inner calm.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1609710228159-2bb6cd3028fc?auto=format&fit=crop&w=800&q=80" alt="Citrine Bracelet">
-        <h3>Citrine Joy Bracelet</h3>
-        <p>Radiates warmth and abundance, linked to the Fire element.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="learn">
-    <h2>Learn</h2>
-    <ul>
-      <li><strong>Crystal Meanings:</strong> Explore which stones align with your missing elements.</li>
-      <li><strong>Horoscope Test:</strong> Enter birth data to generate your element chart via AI.</li>
-      <li><strong>Book a Healing:</strong> Choose from five healing services based on your energy type.</li>
-    </ul>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Leave us a message — we’ll reply as soon as energy allows ✧</p>
-    <form id="contact-form">
-      <input type="hidden" name="access_key" value="69f881d2-6e0d-47e5-9062-3aebda0e3151" />
+    <form action="https://formsubmit.io/send/69f881d2-6e0d-47e5-9062-3aebda0e3151" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
-    <div id="response-message"></div>
   </section>
 
   <footer>
     &copy; 2025 Lumen. Powered by Taoist energy & intention. All rights reserved.
   </footer>
-
-  <script>
-    const form = document.getElementById("contact-form");
-    const messageBox = document.getElementById("response-message");
-
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const formData = new FormData(form);
-      const data = Object.fromEntries(formData.entries());
-
-      try {
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(data)
-        });
-
-        if (res.ok) {
-          form.reset();
-          messageBox.innerText = "✅ Thank you! Your message has been sent.";
-        } else {
-          messageBox.innerText = "❌ Error sending message. Please try again later.";
-        }
-      } catch (error) {
-        messageBox.innerText = "⚠️ Network error. Please try again.";
-      }
-    });
-  </script>
 </body>
 </html>
