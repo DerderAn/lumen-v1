@@ -1,116 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lumen | Crystal Rituals</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
-      margin: 0;
       font-family: 'Outfit', sans-serif;
-      background-color: #fdfcfa;
-      color: #222;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 600;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1.2rem;
-      text-decoration: none;
-      color: #555;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .banner {
-      width: 100%;
-      height: 600px;
-      background-color: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-    .banner-content {
-      z-index: 2;
-      max-width: 720px;
       padding: 2rem;
+      background: #fdfcfa;
+      color: #333;
     }
-    .banner h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .banner p {
-      font-size: 1.2rem;
-      color: #f5f5f5;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    section h2 {
+    h1 {
       font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
       text-align: center;
-    }
-    section p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #444;
-      max-width: 720px;
-      margin: 0 auto 2rem auto;
-      text-align: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .product-card {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-6px);
-    }
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .product-card h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-    }
-    .product-card p {
-      font-size: 0.95rem;
-      color: #666;
+      margin-bottom: 2rem;
     }
     form {
-      max-width: 600px;
+      max-width: 500px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -118,14 +26,13 @@
     }
     input, textarea {
       padding: 0.8rem;
+      font-size: 1rem;
       border: 1px solid #ccc;
       border-radius: 6px;
-      font-size: 1rem;
-      font-family: 'Outfit', sans-serif;
     }
     button {
-      padding: 0.8rem 2rem;
-      background-color: #444;
+      padding: 0.8rem;
+      background-color: #333;
       color: white;
       border: none;
       border-radius: 6px;
@@ -133,75 +40,19 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #222;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f3f2ef;
-      font-size: 0.9rem;
-      color: #777;
+      background-color: #111;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Lumen</h1>
-    <nav>
-      <a href="#story">About</a>
-      <a href="#products">Products</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="banner">
-    <div class="banner-content">
-      <h2>Begin your energy ritual</h2>
-      <p>Crystal tools inspired by the Five Elements — where earth meets soul.</p>
-    </div>
-  </div>
-
-  <section id="story">
-    <h2>Our Mission</h2>
-    <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature's five elemental forces. Our crystals are curated to awaken inner flow and harmony — for those who believe in beauty that resonates deeper.</p>
-  </section>
-
-  <section id="products">
-    <h2>Crystal Bracelets</h2>
-    <div class="grid">
-      <div class="product-card">
-        <img src="images/tiger.jpg" alt="Tiger Eye Bracelet">
-        <h3>Tiger Eye Energy Bracelet</h3>
-        <p>Grounding and empowering. A go-to for daily strength and focus.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/amethyst.jpg" alt="Amethyst Bracelet">
-        <h3>Amethyst Harmony Bracelet</h3>
-        <p>Soothing and intuitive — perfect for meditation and inner calm.</p>
-      </div>
-      <div class="product-card">
-        <img src="images/citrine.jpg" alt="Citrine Bracelet">
-        <h3>Citrine Joy Bracelet</h3>
-        <p>Radiates warmth and abundance, linked to the Fire element.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Leave us a message — we’ll reply as soon as energy allows ✧</p>
-    <form action="https://formsubmit.co/xiruhuang@foxmail.com" method="POST">
-      <input type="hidden" name="_cc" value="huangdean@foxmail.com">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Lumen. Powered by Taoist energy & intention. All rights reserved.
-  </footer>
+  <h1>Contact Us</h1>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="69f881d2-6e0d-47e5-9062-3aebda0e3151">
+    <input type="hidden" name="redirect" value="https://lumenelement.netlify.app/success.html" />
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
 </body>
 </html>
