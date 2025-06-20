@@ -1,238 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lumen | Elemental Healing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Outfit', sans-serif;
-      background-color: #fcfcfc;
-      color: #2a2a2a;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 2rem 1rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      font-weight: 600;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a {
-      margin: 0 1.2rem;
-      text-decoration: none;
-      color: #4a4a4a;
-      font-weight: 500;
-      font-size: 1rem;
-    }
-    .banner {
-      width: 100%;
-      height: 600px;
-      background-image: url('https://images.unsplash.com/photo-1617059322005-e4f8b579262b');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-    .banner::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.3);
-    }
-    .banner-content {
-      position: relative;
-      z-index: 2;
-      max-width: 700px;
-      padding: 2rem;
-    }
-    .banner h2 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-    .banner p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #eaeaea;
-    }
-    section {
-      padding: 5rem 2rem;
-      max-width: 1100px;
-      margin: auto;
-    }
-    section h2 {
-      font-size: 2rem;
-      font-weight: 600;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    section p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: #444;
-      max-width: 720px;
-      margin: 0 auto 2rem auto;
-      text-align: center;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-    .product-card {
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      text-align: center;
-      transition: all 0.3s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    }
-    .product-card img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .product-card h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-      font-weight: 600;
-    }
-    .product-card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      max-width: 720px;
-      margin: 1rem auto;
-      color: #444;
-    }
-    ul li {
-      margin-bottom: 0.75rem;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #f0f0eb;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen | Crystal Rituals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Lumen</h1>
     <nav>
-      <a href="#story">Brand Story</a>
-      <a href="#new">New</a>
-      <a href="#best">Best Sellers</a>
-      <a href="#shop">Shop All</a>
-      <a href="#learn">Learn</a>
+      <a href="index.html">Home</a>
+      <a href="crystal-meanings.html">Crystal Meanings</a>
+      <a href="horoscope.html">Horoscope Test</a>
+      <a href="book.html">Book Element Reading</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <div class="banner">
+  <section class="hero-banner">
     <div class="banner-content">
       <h2>Awaken Your Energy</h2>
-      <p>Crystals, rituals, and tools inspired by Taoist Five Elements — reimagined for the modern soul.</p>
+      <p>Crystal tools inspired by the Five Elements — where earth meets soul.</p>
     </div>
-  </div>
-
-  <section id="story">
-    <h2>Our Story</h2>
-    <p>
-      Inspired by Taoist elemental wisdom and refined through a Western lens of minimalism, Lumen offers a path to inner harmony. Our mission is to help you restore balance using nature’s own rhythm — through crystals, rituals, and meaningful objects designed around the Five Elements: Wood, Fire, Earth, Metal, and Water.
-    </p>
   </section>
 
-  <section id="new">
+  <section class="story">
+    <h2>Our Story</h2>
+    <p>Rooted in Taoist wisdom, Lumen creates rituals to reconnect with nature’s five elemental forces. Our crystals are curated to awaken inner flow and harmony — for those who believe in beauty that resonates deeper.</p>
+  </section>
+
+  <section class="arrivals">
     <h2>New Arrivals</h2>
     <div class="grid">
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="New Crystal Pendant">
-        <h3>Elemental Pendant – Fire</h3>
-        <p>Ignite passion and expression with this handcrafted crystal charm.</p>
+        <img src="https://images.unsplash.com/photo-1614098923835-62b26139b2a2?auto=format&fit=crop&w=800&q=80" alt="Tiger Eye Bracelet">
+        <h3>Tiger Eye Energy Bracelet</h3>
+        <p>Grounding and empowering. A go-to for daily strength and focus.</p>
       </div>
       <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Yin-Yang Tray">
-        <h3>Yin-Yang Balance Tray</h3>
-        <p>Ceramic ritual dish designed for daily intention and grounding.</p>
+        <img src="https://images.unsplash.com/photo-1605702012163-f66d06de4982?auto=format&fit=crop&w=800&q=80" alt="Amethyst Bracelet">
+        <h3>Amethyst Harmony Bracelet</h3>
+        <p>Soothing and intuitive — perfect for meditation and inner calm.</p>
+      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1609710228159-2bb6cd3028fc?auto=format&fit=crop&w=800&q=80" alt="Citrine Bracelet">
+        <h3>Citrine Joy Bracelet</h3>
+        <p>Radiates warmth and abundance, linked to the Fire element.</p>
       </div>
     </div>
   </section>
 
-  <section id="best">
-    <h2>Best Sellers</h2>
-    <div class="grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Wood Element Bracelet">
-        <h3>Wood Element Bracelet</h3>
-        <p>Promotes growth, vision, and a sense of rooted purpose.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Metal Element Mist">
-        <h3>Metal Element Mist</h3>
-        <p>For mental clarity and refined energy flow. Infused with quartz.</p>
-      </div>
+  <section class="learn">
+    <h2>Learn About the Five Elements</h2>
+    <div class="elements-grid">
+      <div><h3>Wood</h3><p>Growth, vitality, and flexibility. Balances stress and fuels ambition.</p></div>
+      <div><h3>Fire</h3><p>Passion, energy, and creativity. Ignites courage and love.</p></div>
+      <div><h3>Earth</h3><p>Stability and nourishment. Grounds the spirit and promotes safety.</p></div>
+      <div><h3>Metal</h3><p>Precision, clarity, and strength. Helps with grief and letting go.</p></div>
+      <div><h3>Water</h3><p>Flow and wisdom. Encourages intuition and emotional healing.</p></div>
     </div>
   </section>
 
-  <section id="shop">
-    <h2>Shop All</h2>
-    <p>Explore our full ritual collection – crystal sets, elemental sprays, candle kits, and harmony tools to support your daily energy work.</p>
-    <div class="grid">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Water Element Candle">
-        <h3>Water Element Candle</h3>
-        <p>Connect with intuition and softness. Lavender + moonstone blend.</p>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x300" alt="Earth Element Crystal Kit">
-        <h3>Earth Element Crystal Kit</h3>
-        <p>Grounding stones to support nourishment and inner stability.</p>
-      </div>
+  <section class="crystals">
+    <h2>Crystal Insights</h2>
+    <div class="crystal-list">
+      <div><h3>Amethyst</h3><p>Calms the mind and enhances intuition. Aligns with Water & Fire.</p></div>
+      <div><h3>Citrine</h3><p>Boosts creativity and joy. Associated with Fire.</p></div>
+      <div><h3>Green Aventurine</h3><p>Promotes opportunity and growth. Linked with Wood.</p></div>
     </div>
-  </section>
-
-  <section id="learn">
-    <h2>Learn</h2>
-    <p>
-      The Five Elements are living archetypes of energy in both nature and self. Each one holds wisdom, gifts, and imbalances. At Lumen, we translate these ancient concepts into everyday tools that meet you where you are.
-    </p>
-    <ul>
-      <li><strong>Wood</strong>: Vision, ambition, growth</li>
-      <li><strong>Fire</strong>: Passion, inspiration, heart-led expression</li>
-      <li><strong>Earth</strong>: Grounding, nourishment, harmony</li>
-      <li><strong>Metal</strong>: Clarity, structure, letting go</li>
-      <li><strong>Water</strong>: Intuition, flow, inner knowing</li>
-    </ul>
-    <p>Each element corresponds to tools, crystals, and practices that bring that energy to life. We’re here to guide your journey of reconnection, one ritual at a time.</p>
   </section>
 
   <footer>
-    &copy; 2025 Lumen by Evian & Dean. All rights reserved.
+    &copy; 2025 Lumen. Powered by Taoist energy & intention. All rights reserved.
   </footer>
 </body>
 </html>
